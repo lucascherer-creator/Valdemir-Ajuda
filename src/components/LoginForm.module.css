@@ -1,0 +1,72 @@
+.wrapper {
+    max-width: 30rem;
+    margin: auto;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper h1 {
+    text-align: center;
+}
+
+
+.loginPref {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-top: 0.875rem;
+    color: white;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: white;
+}
+
+.inputBox {
+    min-width: 23rem;
+    margin-top: 0.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #737373;
+    font-size: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+.buttonLogin button {
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    border: 0;
+    background-color: #737373;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.buttonLogin {
+    text-align: center;
+}
+
+.buttonLogin button:hover {
+    color: #737373;
+    background-color: white;
+
+}
