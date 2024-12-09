@@ -1,4 +1,4 @@
-input[type=checkbox] {
+.wrapperCheck input[type=checkbox] {
     display: none;
 }
 

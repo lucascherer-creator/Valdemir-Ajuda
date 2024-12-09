@@ -1,0 +1,163 @@
+.wrapper {
+    max-width: 50rem;
+    margin: auto;
+    padding: 1.2rem 1.2rem;
+    border-radius: 8px;
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper h1 {
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+.wrapper h1 span {
+    font-weight: 300;
+    color: #facc15;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.inputBox {
+    min-width: 44rem;
+    margin-top: 0.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox span {
+    color: #facc15;
+}
+
+.inputBox input,
+select {
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #737373;
+    font-size: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+.inputBox select {
+    padding: .5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+fieldset .flex {
+    gap: 1.2rem;
+}
+
+.checkWrapper {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.checkWrapper input[type="radio"] {
+
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.checkWrapper input[type="radio"]:checked {
+    background-image: radial-gradient(white 35%, #facc15 40%);
+}
+
+/* Estilo básico para o checkbox */
+input[type="checkbox"] {
+    width: 20px;
+    /* Tamanho do checkbox */
+    height: 20px;
+    /* Tamanho do checkbox */
+    background-color: transparent;
+    /* Fundo transparente */
+    border: 2px solid #737373;
+    /* Borda do checkbox */
+    border-radius: 4px;
+    /* Borda arredondada */
+    appearance: none;
+    /* Remove o estilo padrão do checkbox */
+    cursor: pointer;
+    /* Cursor de ponteiro para indicar interatividade */
+    transition: all 0.3s ease;
+    /* Animação suave para mudanças de estado */
+}
+
+/* Estilo quando o checkbox está marcado */
+input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    /* Cor de fundo quando marcado */
+    border-color: #ffffff;
+    /* Cor da borda quando marcado */
+}
+
+/* Estilo do checkbox ao ser clicado (focus) */
+input[type="checkbox"]:focus {
+    outline: none;
+    /* Remove o contorno padrão do navegador */
+    border-color: #facc15;
+    /* Cor da borda quando o checkbox está em foco */
+}
+
+/* Adiciona um efeito visual ao passar o mouse */
+input[type="checkbox"]:hover {
+    border-color: #ffac33;
+    /* Cor da borda quando passa o mouse */
+}
+
+/* Estilo do label associado ao checkbox */
+input[type="checkbox"]+label {
+    font-size: 1rem;
+    /* Tamanho da fonte do label */
+    color: white;
+    /* Cor do texto do label */
+    cursor: pointer;
+    /* Indica que o label é clicável */
+    padding-left: 8px;
+    /* Espaço entre o checkbox e o texto */
+}
+
+/* Quando o checkbox é marcado, aplica um estilo ao label (para dar feedback visual) */
+input[type="checkbox"]:checked+label {
+    color: #facc15;
+    /* Cor do texto do label quando o checkbox é marcado */
+}

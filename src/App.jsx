@@ -12,9 +12,6 @@ export function App() {
         <div>
             <BrowserRouter>
                 <Router />
-                <LoginForm />
-                <ForgetPsw />
-                <FcpInfo />
             </BrowserRouter>
         </div>
     )
