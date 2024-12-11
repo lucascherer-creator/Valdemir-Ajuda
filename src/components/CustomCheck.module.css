@@ -56,7 +56,7 @@
 }
 
 .check:hover:before {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .check:hover svg {
@@ -76,4 +76,8 @@
     stroke-dashoffset: 42;
     transition: all 0.2s linear;
     transition-delay: 0.15s;
+}
+
+.connectSpan {
+    color: #65a30d;
 }

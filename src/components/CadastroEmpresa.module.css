@@ -1,0 +1,154 @@
+input::placeholder {
+    font-size: .875rem;
+    opacity: 50%;
+}
+
+.wrapper {
+    max-width: 50rem;
+    margin: 3rem auto;
+    padding: 1.2rem 1.2rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.wrapper h1 {
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+.wrapper h1 span {
+    font-weight: 300;
+    color: #65a30d;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.inputBox {
+    min-width: 44rem;
+    margin-top: 0.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox span {
+    color: #65a30d;
+}
+
+.inputBox input,
+select {
+    width: 100%;
+    height: 2rem;
+    background: #F6F8FA;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #E2E4E8;
+    font-size: 1rem;
+    padding: .5rem;
+    color: rgb(0, 0, 0);
+
+}
+
+.inputBox select {
+    padding: 0rem .5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+fieldset .flex {
+    gap: 1.2rem;
+}
+
+.checkWrapper {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #E2E4E8;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+input[type="checkbox"]:checked {
+    background-color: #E2E4E8;
+    border-color: #E2E4E8;
+}
+
+
+input[type="checkbox"]:focus {
+    outline: none;
+    border-color: #facc15;
+}
+
+input[type="checkbox"]:hover {
+    border-color: #ffac33;
+}
+
+input[type="checkbox"]+label {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+input[type="checkbox"]:checked+label {
+    color: #facc15;
+}
+
+label {
+    font-size: .875rem;
+    color: #737373;
+}
+
+.inputLider {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: .5rem;
+}
+
+.inputLider label {
+    margin: 0;
+}

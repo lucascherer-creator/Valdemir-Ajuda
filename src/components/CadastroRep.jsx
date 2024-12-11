@@ -1,6 +1,10 @@
 import styles from './CadastroRep.module.css'
+import React, { useState } from "react";
+import InputMask from 'react-input-mask';
+
 
 export function CadastroRep() {
+
     return (
         <div className={styles.wrapper}>
             <h1>Cadastro <span> Representante</span></h1>
@@ -34,8 +38,16 @@ export function CadastroRep() {
                             </div>
                         </div>
                         <div className={styles.flex1}>
-                            <label htmlFor="useName">Comissão <span>*</span></label>
-                            <input type="text" id="useName" name="useName" />
+                            <label htmlFor="useName">Comissão % <span>*</span></label>
+                            <InputMask
+                                mask="99,9"
+                                id="comsissião"
+                                name="comsissião"
+                                placeholder="00,0%"
+                                maskChar=""
+                            >
+                                {(inputProps) => <input {...inputProps} className="input-field" />}
+                            </InputMask>
                         </div>
                     </div>
                 </fieldset>
