@@ -9,31 +9,6 @@ export function CadastroRep() {
 
     return (
         <div className={styles.container}>
-            <aside className={styles.sidebar} >
-                <div >
-                    <ul>
-                        <li>
-                            <a href="">
-                                <i class='bx bx-customize'></i>
-                                <span>Produtos</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class='bx bxs-doughnut-chart'></i>
-                                <span>Empresas</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class='bx bxs-group'></i>
-                                <span>Representantes</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </aside >
             <form action="" className={styles.form} >
                 <header>
                     <h1>Cadastro <span> Representante</span></h1>
