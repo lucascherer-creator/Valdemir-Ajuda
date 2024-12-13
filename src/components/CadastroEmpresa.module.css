@@ -1,30 +1,23 @@
+/* .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: calc(100vh - 1.5rem);
+    grid-template-areas: "aside form";
+    height: 100vh;
+} */
+
+
 input::placeholder {
     font-size: .875rem;
     opacity: 50%;
 }
 
-.wrapper {
-    max-width: 50rem;
-    margin: 3rem auto;
-    padding: 1.2rem 1.2rem;
-    border-radius: 8px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
-
-.wrapper h1 {
-    display: block;
-    margin-bottom: 1.25rem;
-}
-
-.wrapper h1 span {
-    font-weight: 300;
-    color: #65a30d;
+.form {
+    grid-area: form;
+    padding: 8rem 10rem;
+    align-content: center;
+    background-color: transparent;
+    max-height: 100vh;
 }
 
 fieldset {
@@ -39,16 +32,63 @@ fieldset label {
     margin-bottom: .25rem;
 }
 
-.inputBox {
-    min-width: 44rem;
-    margin-top: 0.875rem;
-    display: flex;
-    justify-content: center;
+.form h1 {
+    margin-bottom: 3.5rem;
+    color: #777777;
 }
 
-.inputBox span {
-    color: #65a30d;
+.form h1 span {
+    font-weight: 300;
+    color: #777777;
 }
+
+/* .sidebar {
+    grid-area: aside;
+    max-width: 512px;
+    height: 100vh;
+
+    background-color: #232225;
+    border-radius: 0 40px 0 0;
+
+    padding: 6rem 2rem;
+
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    min-width: 4rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #777777;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: .875rem 4rem .875rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    gap: .875rem;
+}
+
+.sidebar li a:hover {
+    background-color: #E2E4E8;
+}
+
+.sidebar span {
+    text-align: left;
+} */
 
 .inputBox input,
 select {
@@ -62,31 +102,16 @@ select {
     font-size: 1rem;
     padding: .5rem;
     color: rgb(0, 0, 0);
-
 }
 
 .inputBox select {
     padding: 0rem .5rem;
 }
 
-.flex {
+.inputBox {
+    margin-top: 0.875rem;
     display: flex;
-}
-
-.flex1 {
-    flex: 1;
-}
-
-.flex3 {
-    flex: 3;
-}
-
-.flex2 {
-    flex: 2;
-}
-
-fieldset .flex {
-    gap: 1.2rem;
+    justify-content: center;
 }
 
 .checkWrapper {
@@ -97,9 +122,7 @@ fieldset .flex {
     justify-content: space-evenly;
 }
 
-
-
-input[type="checkbox"] {
+/* input[type="checkbox"] {
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -135,6 +158,26 @@ input[type="checkbox"]+label {
 
 input[type="checkbox"]:checked+label {
     color: #facc15;
+} */
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+fieldset .flex {
+    gap: .5rem;
 }
 
 label {
@@ -147,6 +190,10 @@ label {
     align-items: center;
     margin-top: 1rem;
     gap: .5rem;
+}
+
+.inputLider input {
+    max-width: 1rem;
 }
 
 .inputLider label {

@@ -3,9 +3,11 @@ import InputMask from 'react-input-mask';
 
 export function CadastroEmpresa() {
     return (
-        <div className={styles.wrapper}>
-            <h1>Cadastro <span>Empresa</span> </h1>
-            <form action="">
+        <div className={styles.container}>
+            <form action="" className={styles.form}>
+                <header>
+                    <h1>Cadastro <span>Empresa</span> </h1>
+                </header>
                 <fieldset className={styles.inputBox}>
                     <div className={styles.flex}>
                         <div className={styles.flex1}>
@@ -25,7 +27,7 @@ export function CadastroEmpresa() {
                         </div>
                     </div>
                 </fieldset>
-                <fieldset className={styles.checkWrapper}>
+                <fieldset className={`${styles.checkWrapper} $ `}>
                     <div>
                         <label htmlFor="geraCota">Cliente</label>
                         <input type="checkbox" id="geraCota" name="geraCota" value="ativo" />

@@ -9,6 +9,7 @@ body {
     color: #f5f4f5;
 }
 
+<<<<<<< HEAD
 .container {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -16,10 +17,28 @@ body {
     grid-template-areas: "aside main";
 }
 
+=======
+html,
+#root,
+body {
+    min-height: 100vh;
+}
+
+
+
+>>>>>>> teste
 body,
 input,
 button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: calc(100vh - 1.5rem);
+    grid-template-areas: "aside form";
+    height: 100vh;
 }
