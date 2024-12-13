@@ -3,12 +3,41 @@ import React, { useState } from "react";
 import InputMask from 'react-input-mask';
 
 
+
 export function CadastroRep() {
 
+
     return (
-        <div className={styles.wrapper}>
-            <h1>Cadastro <span> Representante</span></h1>
-            <form action="">
+        <div className={styles.container}>
+            <aside className={styles.sidebar} >
+                <div >
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class='bx bx-customize'></i>
+                                <span>Produtos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class='bx bxs-doughnut-chart'></i>
+                                <span>Empresas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class='bx bxs-group'></i>
+                                <span>Representantes</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside >
+            <form action="" className={styles.form} >
+                <header>
+                    <h1>Cadastro <span> Representante</span></h1>
+                </header>
                 <fieldset className={styles.inputBox}>
                     <div className={styles.flex}>
                         <div className={styles.flex2}>
@@ -67,10 +96,6 @@ export function CadastroRep() {
                         </div>
                     </div>
                 </fieldset>
-                {/* <fieldset className={styles.inputBox}>
-                    <label htmlFor="company">Estab. Padrão <span>*</span> </label>
-                    <input type="text" id="company" name="company" />
-                </fieldset> */}
                 <fieldset className={styles.inputBox}>
                     <div className={styles.flex}>
                         <div className={styles.flex1}>
@@ -122,6 +147,9 @@ export function CadastroRep() {
                     </div>
                 </fieldset>
             </form>
-        </div>
+        </div >
     )
 }
+
+
+

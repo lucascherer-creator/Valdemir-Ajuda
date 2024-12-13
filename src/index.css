@@ -5,14 +5,8 @@
 }
 
 body {
-    background-color: #F6F8FA;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #000000;
-
+    background-color: white;
+    color: #f5f4f5;
 }
 
 body,
