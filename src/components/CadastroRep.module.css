@@ -1,9 +1,3 @@
-.container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "aside form";
-}
-
 input::placeholder {
   font-size: 0.875rem;
   opacity: 50%;
@@ -11,7 +5,11 @@ input::placeholder {
 
 .form {
   grid-area: form;
-  padding: 8rem 10rem;
+  /* padding: 8rem 10rem; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
   background-color: transparent;
 }
 
