@@ -29,15 +29,16 @@ export function CadastroRep() {
             </label>
             <input type="text" id="namePir" name="namePir" />
           </div>
+          <div className={styles.flex1}>
+            <label htmlFor="useName">
+              Comissão % <span>*</span>
+            </label>
+            <InputMask mask="99,9" id="comsissião" name="comsissião" placeholder="00,0%" maskChar="">
+              {(inputProps) => <input {...inputProps} className="input-field" />}
+            </InputMask>
+          </div>
         </div>
-        <div className={styles.flex1}>
-          <label htmlFor="useName">
-            Comissão % <span>*</span>
-          </label>
-          <InputMask mask="99,9" id="comsissião" name="comsissião" placeholder="00,0%" maskChar="">
-            {(inputProps) => <input {...inputProps} className="input-field" />}
-          </InputMask>
-        </div>
+
       </fieldset>
       <fieldset className={styles.inputBox}>
         <div className={styles.flex}>
