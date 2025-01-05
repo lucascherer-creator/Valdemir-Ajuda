@@ -24,9 +24,21 @@ export function Aside() {
           </Link>
         </li>
         <li>
-          <Link to="/company">
+          <Link to="/representante">
             <i className="bx bxs-group"></i>
             <span>Representantes</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/listagem-empresas">
+            <i className="bx bxs-group"></i>
+            <span>Listagem Empresas</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/listagem-vendas">
+            <i className="bx bxs-group"></i>
+            <span>Listagem Vendas</span>
           </Link>
         </li>
       </ul>

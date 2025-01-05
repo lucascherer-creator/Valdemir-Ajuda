@@ -1,7 +1,7 @@
-import styles from "./CadastroEmpresa.module.css";
+import styles from "./RegisterCompany.module.css";
 import InputMask from "react-input-mask";
 
-export function CadastroEmpresa() {
+export function RegisterCompany() {
   return (
     <form action="" className={styles.form}>
       <header>

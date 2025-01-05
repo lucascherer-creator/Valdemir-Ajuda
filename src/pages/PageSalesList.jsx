@@ -1,13 +1,13 @@
-import { RegisterCompany } from "../components/RegisterCompany"
+import { SalesList } from "../components/SalesList";
 import { Aside } from "../components/Aside";
 import { Main } from "../components/Main";
 
-export function PageRegisterCompany() {
+export function PageSalesList() {
     return (
         <div className="container">
             <Aside />
             <Main>
-                <RegisterCompany />
+                <SalesList />
             </Main>
         </div>
     )

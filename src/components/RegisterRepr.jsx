@@ -1,7 +1,7 @@
-import styles from "./CadastroRep.module.css";
+import styles from "./RegisterRepr.module.css";
 import InputMask from "react-input-mask";
 
-export function CadastroRep() {
+export function RegisterRepr() {
   return (
     <form action="" className={styles.form}>
       <header>

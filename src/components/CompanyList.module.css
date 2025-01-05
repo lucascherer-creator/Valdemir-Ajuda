@@ -1,0 +1,139 @@
+input::placeholder {
+    font-size: 0.875rem;
+    opacity: 50%;
+}
+
+.form {
+    grid-area: form;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    background-color: transparent;
+}
+
+.form h1 {
+    margin-bottom: 3.5rem;
+    color: #777777;
+}
+
+.form h1 span {
+    font-weight: 300;
+    color: #777777;
+}
+
+.inputBox input,
+select {
+    width: 100%;
+    height: 2rem;
+    background: #f6f8fa;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #e2e4e8;
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.inputBox select {
+    padding: 0rem 0.5rem;
+}
+
+.inputBox {
+    margin-top: 0.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.checkWrapper {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-end;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+fieldset .flex {
+    gap: 0.5rem;
+}
+
+.fieldsetButton {
+    display: flex;
+    text-align: center;
+    margin-top: 3.5rem;
+    align-items: center;
+}
+
+.fieldsetButton button {
+    padding: .5rem 4.5rem;
+    border: solid 1px #e2e4e8;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: all 0.1s ease;
+}
+
+.greenButton {
+    color: white;
+    background-color: #65a30d;
+
+    &:hover {
+        transform: scale(.95);
+        background-color: #f6f8fa;
+        color: #65a30d;
+    }
+}
+
+.redButton {
+    color: #777777;
+
+    &:hover {
+        transform: scale(.95);
+        background-color: #f6f8fa;
+
+    }
+}
+
+label {
+    font-size: 0.875rem;
+    color: #737373;
+}
+
+.inputLider {
+    display: flex;
+    align-items: center;
+    /* margin-top: 1rem; */
+    gap: 0.5rem;
+    border: solid 1px #e2e4e8;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #f6f8fa;
+    height: 2rem;
+}
+
+.inputLider input {
+    max-width: 1rem;
+}
+
+.inputLider label {
+    margin: 0;
+}
